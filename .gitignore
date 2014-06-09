@@ -1,0 +1,12 @@
+*target*
+*.jar
+*.war
+*.ear
+*.class
+.metadata
+build/**
+target/**
+
+# Gradle
+.gradle/**
+.settings/**

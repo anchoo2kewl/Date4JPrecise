@@ -1347,7 +1347,7 @@ DateTime newDt = oldDt.changeTimeZone(fromUK, toIndonesia);
 	  int nanoInt = (int)(Double.parseDouble(df.format(nano))*1000);
 	  if(nanoInt == 1000)
 		nanoInt = 0;
-	  return "Testing 123"+this.getYear()+"-"+this.getMonth()+"-"+this.getDay()+" "+
+	  return this.getYear()+"-"+this.getMonth()+"-"+this.getDay()+" "+
 	  this.getHour()+":"+this.getMinute()+":"+this.getSecond()+"."+nanoInt;
   }
 
