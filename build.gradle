@@ -1,0 +1,15 @@
+apply plugin:'groovy' 
+
+sourceSets { 
+    main { 
+        groovy { 
+            srcDir 'src/java' 
+        } 
+    } 
+} 
+
+task buildJar(type: Jar){ 
+    baseName = 'date4jprecise' 
+    destinationDir = file('repos') 
+    from sourceSets.main.java 
+} 
